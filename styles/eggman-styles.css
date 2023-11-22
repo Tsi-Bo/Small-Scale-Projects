@@ -1,0 +1,96 @@
+*,
+*:before,
+*:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #49aaee;
+  display: flex;
+  flex-direction: column;
+
+}
+
+h1 {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  font-size: 200px;
+  margin: 50px;
+  color: #02000d;
+  white-space: nowrap;
+}
+
+.egg-man {
+  height: 300px;
+  width: 230px;
+  background-color: white;
+  position: relative;
+  margin: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow: 25px 10px rgba(0,0,0,0.2);
+}
+
+.egg-man:before{
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-color: #02000d;
+  border-radius: 6000px;
+  top: 180px;
+  right: 88px;
+  box-shadow: -40px 0 0#02000d,
+  10px 15px 0 -2px #f38117,
+  -50px 15px 0 -2px #f38117,
+  -10px 0px 0 65px #f8d50f;
+}
+
+.egg-man:after{
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 25px;
+  background-color: #02000d;
+  top: 200px;
+  left: 102px;
+  border-radius: 5px 5px 15px 15px;
+  border: 3px solid #02000d;
+}
+
+p {
+  text-align: center;
+  margin: 50px;
+  font-family:'Arial Narrow Bold', sans-serif;
+  font-size: 25px;
+  color: #515151;
+}
+
+footer p {
+    font-size: 20px;
+    text-align: right;
+}
+
+#github-link {
+  color: #f8d50f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+#github-link:hover{
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#tutorial-link {
+  color: #515151;
+  font-weight: bold;
+  
+}
