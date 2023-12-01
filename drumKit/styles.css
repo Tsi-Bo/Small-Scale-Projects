@@ -1,0 +1,74 @@
+
+kbd {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+}
+span, p, a{
+  color: lightgrey;
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+a:hover {
+color: coral;
+}
+
+h1{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+font-size: 3rem;
+}
+
+h2 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 2rem;
+
+}
+
+
+body {
+  background: rgb(59,59,59);
+  background: linear-gradient(323deg, rgba(59,59,59,1) 0%, rgba(27,27,27,1) 76%);
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh;
+  min-width: 1000px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20% 0;
+}
+
+.keys {
+display: flex;
+justify-content: center;
+align-items: center;;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 5px;
+
+  width: 120px;
+  height: 120px;
+  border: 2px solid white;
+  border-radius: 4px;
+  background-color: rgba(0,0,0,0.1);
+
+  transition:all 0.07s;
+
+}
+
+.pressed {
+border-color: coral;
+box-shadow: 0 0 12px coral;
+transform: scale(1.1);
+}
