@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clock Project</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  
+  <header>
+    <h1>This is a clock</h1>
+    <h2>As a project to learn JavaScript</h2>
+  </header>
+
+
+  <div class="clock">
+    <div class="clock-face">
+      <div class="hand hour-hand"></div>
+      <div class="hand min-hand"></div>
+      <div class="hand second-hand"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made by <a href="https://github.com/Tsi-Bo">TSIBO</a></p>
+  </footer>
+
+
+  <script>
+
+const secondsHand = document.querySelector('.second-hand');
+const minutesHand = document.querySelector('.min-hand');
+const hoursHand = document.querySelector('.hour-hand');
+
+function setDate() {
+  const now = new Date();
+
+  const seconds = now.getSeconds();
+  const secondsDegrees = (seconds / 60) * 360 + 90;
+  secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+  const minutes = now.getMinutes();
+  const minutesDegrees = (minutes / 60) * 360 + 90;
+  minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+  const hours = now.getHours();
+  const hoursDegrees = (hours / 12) * 360 + 90;
+  hoursHand.style.transform = `rotate(${hoursDegrees})deg`;
+}
+
+setInterval(setDate, 1000);
+
+  </script>
+</body>
+</html>
