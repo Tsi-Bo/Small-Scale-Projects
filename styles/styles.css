@@ -8,6 +8,10 @@ body {
   padding: 0 30px;
   min-width: 930px;
 
+  color:#ECF4D6;
+  font-family:'Courier New', Courier, monospace;
+  margin: 0;
+
 }
 
 header, footer, section {
@@ -29,18 +33,26 @@ p{
   font-size: 20px;
 }
 
-p, h1, h2 {
-  color:#ECF4D6;
-  font-family:'Courier New', Courier, monospace;
-  margin: 0;
-
-}
 
 h1 {
   margin-top: 20px;
   font-size: 50px;
   text-align: center;
 }
+
+/* Navbar */
+
+.nav-bar {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.nav-bar a {
+  margin: 0 10px;
+}
+
 
 /* HERO */
 #hero {
