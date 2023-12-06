@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexPanels</title>
+ <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Hello people !</h1>
+    <h2>These are some of my drawings,<br>
+      please take a look !</h2>
+  </header>
+  
+  <div class="panels">
+    <div class="panel panel1">
+      <p>hello</p>
+    </div>
+    <div class="panel panel2">
+      <p>how</p>
+    </div>
+    <div class="panel panel3">
+      <p>you</p>
+    </div>
+    <div class="panel panel4">
+      <p>doin'</p>
+    </div>
+    <div class="panel panel5">
+      <p>today</p>
+    </div>
+  </div>
+
+<script>
+  const panels = document.querySelectorAll('.panel');
+
+  function toggleOpen() {
+    this.classList.toggle('open');
+  } 
+
+  panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+
+
+html {
+  box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.panels {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+
+.panel {
+  margin: 0;
+  width: 100%;
+  height: 80vh;
+  transition: transform 0.5s;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 2em;
+
+  transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+
+  box-shadow : inset 0 0 0 5px rgba(255, 255, 255, 0.1 );
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel.open {
+  font-size: 40px;
+  flex: 5;
+}
+
+.panel1 {background-image: url(./images/image1.png);
+background-size: cover;
+background-position: center;}
+.panel2 {background-image: url(./images/image2.png);
+  background-size: cover;
+  background-position: center;}
+.panel3 {background-image: url(./images/image3.png);
+  background-size: cover;
+  background-position: center;}
+.panel4 {background-image: url(./images/image4.png);
+  background-size: cover;
+  background-position: center;}
+.panel5 {background-image: url(./images/image5.png);
+  background-size: cover;
+  background-position: center;}
+
