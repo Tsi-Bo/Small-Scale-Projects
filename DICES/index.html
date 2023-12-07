@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./styles.css
+    "
+    />
+    <title>Dices</title>
+  </head>
+  <body>
+    <h1>Dices</h1>
+    <section>
+      <div class="dice">
+        <p id="roll-result"></p>
+      </div>
+      <button class="dice-btn">ROLL THE DICES</button>
+    </section>
+
+    <script>
+      let rollBtn = document.querySelector(".dice-btn");
+      let rollResult = document.querySelector("#roll-result");
+
+      rollBtn.onclick = function () {
+        let result = Math.floor(Math.random() * 6 + 1);
+        rollResult.innerHTML = result;
+      };
+    </script>
+  </body>
+</html>

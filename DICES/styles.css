@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  background-color: rgb(47, 47, 47);
+  color: white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dice {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 10px;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice-btn {
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+#roll-result {
+  font-size: 10rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
