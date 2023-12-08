@@ -11,22 +11,48 @@
     <title>Dices</title>
   </head>
   <body>
-    <h1>Dices</h1>
+    <header>
+      <h1>Dices</h1>
+      <hr />
+    </header>
+
     <section>
-      <div class="dice">
-        <p id="roll-result"></p>
+      <div>
+        <div class="dice">
+          <p id="roll-result"></p>
+        </div>
+        <button class="dice-btn">ROLL !</button>
       </div>
-      <button class="dice-btn">ROLL THE DICES</button>
+
+      <div class="btn-input">
+        <label for="quantity">Choose a dice:</label>
+        <select id="quantity" name="quantity">
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+        </select>
+        <p class="roll-comment"></p>
+      </div>
     </section>
+    <div class="sidenav">
+      <div class="nav-container">
+        <a href="https://github.com/Tsi-Bo">GitHub</a>
+        <a href="https://www.instagram.com/tsibo_hp/">Instagram</a>
+        <a href="../index.html">Projects</a>
+      </div>
+    </div>
 
-    <script>
-      let rollBtn = document.querySelector(".dice-btn");
-      let rollResult = document.querySelector("#roll-result");
+    <footer>
+      <p>2023</p>
+      <p>©Thibault F. Bedot</p>
+      <p><a href="https://github.com/Tsi-Bo">GitHub</a></p>
+    </footer>
 
-      rollBtn.onclick = function () {
-        let result = Math.floor(Math.random() * 6 + 1);
-        rollResult.innerHTML = result;
-      };
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
