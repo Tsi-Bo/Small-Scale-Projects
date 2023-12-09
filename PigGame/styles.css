@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Menlo', Courier, monospace;
+  font-weight: 400;
+  height: 100vh;
+  color: #f9f9e0;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px 40px;
+}
+
+/* LAYOUT */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+main {
+  position: relative;
+  width: 80rem;
+  height: 60rem;
+  overflow: hidden;
+  display: flex;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  padding-top: 10px;
+  color: white;
+
+  font-size: 14px;
+}
+
+hr {
+  width: 100%;
+  border-color: #ff90bc;
+}
+
+.player {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 6px solid #333;
+  margin: 10px 0;
+}
+
+/* ELEMENTS */
+.name {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #f9f9e0;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #f9f9e0;
+  margin-bottom: auto;
+}
+
+.player--active {
+  border: 6px solid #ff90bc;
+}
+.player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  border: 6px solid #ff90bc;
+}
+
+.current {
+  background-color: #333;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  border: 6px solid #333;
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #f9f9e0;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  color: #f9f9e0;
+  background: none;
+  border: 6px solid #ff90bc;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+
+  background-color: #333;
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn--new {
+  top: 4rem;
+}
+.btn--roll {
+  top: 39.3rem;
+}
+.btn--hold {
+  top: 46.1rem;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  border: 6px solid #8acdd7;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #8acdd7;
+}
+
+.hidden {
+  display: none;
+}
+
+footer a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 6px solid #333;
+}
+
+footer a:hover {
+  background-color: #ff90bc;
+}
+
+/* nav button */
+#nav-btn {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.menu-container {
+  right: 50px;
+  top: 10px;
+}
+
+/* MENU  */
+
+.nav-menu {
+  position: fixed;
+  background-color: #333;
+  width: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 6px solid #ff90bc;
+  z-index: 10;
+}
+
+.flex {
+  display: flex;
+}
+
+.nav-menu a {
+  margin: 10px;
+  width: 100%;
+  color: inherit;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-menu a:hover {
+  background-color: #ff90bc;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
