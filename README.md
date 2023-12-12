@@ -23,11 +23,6 @@ Since I have never taken any coding classes at school, I decided to follow the s
 | HTML & CSS Full Course | https://www.youtube.com/watch?v=G3e-cpL7ofc |
 | Full Stack Web Dev Bootcamp | https://www.udemy.com/course/the-complete-web-development-bootcamp/ |
 | Complete JavaScript Course  | https://www.udemy.com/course/the-complete-javascript-course/|
-
-
-## Inspirations
-
-Throughout my learning journey I have been helped and inspired by many. here is a collection of people, concepts, projects that deeply motivate me to keep learning : 
-
+| #JavaScript30  | https://javascript30.com/|
 
 
