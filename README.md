@@ -15,7 +15,7 @@ This website is a collection of small to medium sized projects I'm actively work
 
 ## Courses undertaken
 
-Since I have never taken any coding classes at school, I decided to follow the selft-taught path. In this order, here are the courses I have undertaken during the last months. 
+Since I have never taken any coding classes at school, I decided to follow the selft-taught path.  Here are the courses I have undertaken during the last couple of months.
 
 | Plugin | README |
 | ------ | ------ |
