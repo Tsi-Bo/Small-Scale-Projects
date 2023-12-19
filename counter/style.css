@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(33, 175, 193);
+  background: linear-gradient(
+    323deg,
+    rgba(33, 175, 193, 1) 0%,
+    rgba(88, 31, 117, 1) 78%,
+    rgba(76, 7, 111, 1) 90%
+  );
+  background-size: cover;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.btn {
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin: 20px 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+.numbah {
+  font-size: 50px;
+  background-color: white;
+  margin: 20px 15px;
+  padding: 20px 50px;
+  border-radius: 8px;
+}
+
+footer {
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+footer p,
+footer a {
+  color: white;
+  text-decoration: none;
+}

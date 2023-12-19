@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <p class="numbah"></p>
+    <div class="buttons">
+      <button class="btn" id="decrease-btn">DECREASE</button>
+      <button class="btn" id="reset-btn">RESET</button>
+      <button class="btn" id="increase-btn">INCREASE</button>
+    </div>
+
+    <footer id="footer">
+      <p>@2023</p>
+      <p>Copyrights ©Thibault F. Bedot</p>
+      <p><a href="https://github.com/Tsi-Bo">GitHub</a></p>
+    <script>
+      // Set initial count
+      let count = 0;
+
+      // Set value and buttons
+      const value = document.querySelector(".numbah");
+      value.textContent = count;
+      const btns = document.querySelectorAll(".btn");
+      const title = document.querySelector("h1");
+
+      btns.forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+          const styles = e.currentTarget.id;
+          if (styles === "decrease-btn") {
+            count--;
+          } else if (styles === "increase-btn") {
+            count++;
+          } else if (styles === "reset-btn") {
+            count = 0;
+          }
+          if (count > 0) {
+            value.style.color = "green";
+            title.style.color = "green";
+
+          } else if (count < 0) {
+            value.style.color = "red";
+            title.style.color = "red";
+
+          } else if (count === 0) {
+            value.style.color = "black";
+            title.style.color = "white";
+
+          }
+          value.textContent = count;
+        });
+      });
+    </script>
+  </body>
+</html>
