@@ -1,21 +1,23 @@
 # Small Scale Projects
 ## _A reccord of personal projects_
 
-This website is a collection of small to medium sized projects I'm actively working on during my learning process. It contains :
+This website is a collection of small to medium sized projects I'm actively working on during my learning process. 
 
-- HTML / CSS 
-- JavaScript 
-- Other Front-End development ideas
+It contains :
+
+- Basic web development languages like HTML / CSS / JavaScript.
+- Documentation and explanations associated with the projects.
+- Front-End development ideas.
 
 ## How is it important ? 
 
-- Keeps a chronological reccord of my progress over the months
-- Gives a direct and "tangible" overview of my understanding of programming languages
-- Motivates me by showcasing the work and making it accessible to anyone
+- Keeps a chronological reccord of my progress over the months.
+- Gives a direct and "tangible" overview of my understanding of programming languages.
+- Motivates me by showcasing the work and making it accessible to anyone.
 
 ## Courses undertaken
 
-Since I have never taken any coding classes at school, I decided to follow the selft-taught path.  Here are the courses I have undertaken during the last couple of months.
+ Driven by an exponential motivation ang guided by mentors in the field, I decided to go on a self-taught journey. Here are the courses I have undertaken during the last couple of months. 
 
 | Plugin | README |
 | ------ | ------ |
